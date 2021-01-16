@@ -1,0 +1,258 @@
+
+* {
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+html {height:100%;}
+
+body {
+  background-color: #f5f5f5;
+}
+
+/*Part Design Body CCSignIn and CCSignUp*/
+.body_Log_Res {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #f5f5f5;
+}
+
+/*Part Design Body CCMain*/
+.bodyMain {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+/*Part Header for all Activities*/
+.headerPage {
+  text-align: center;
+  color: #262626;
+  background-color: #fff;
+  border: 1px solid #dbdbdb;
+  border-bottom: 2px solid #4285f4;
+  border-radius: 4px 4px 0px 0px;
+  font-weight: 700;
+  height: 50px;
+  margin: 0;
+  padding: 15px;
+}
+
+/*Part Design form for CCSignIn and CCSignUp*/
+.form_Log_Res {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 80px 80px;
+  border: 1px solid #dbdbdb;
+  border-radius: 0px 0px 4px 4px;
+  background-color: #fff;
+}
+
+/*Part Design form for CCMain*/
+.formMain {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 80px 80px;
+  border: 1px solid #dbdbdb;
+  background-color: #fff;
+}
+
+/*Animate for all form*/
+.formAnimate {animation: animatezoom 0.6s}
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
+/*Design Inputs*/
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  box-sizing: border-box;
+  outline: none;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  border: 1px solid #4285f4;
+}
+
+/*Design Buttons*/
+.btnLogin {
+  background-color: #00c3ff !important;
+  color: white;
+  padding: 12px 20px !important;
+  margin: 8px 0 !important;
+  border: none !important;
+  border-radius: 4px !important;
+  cursor: pointer !important;
+  width: 100% !important;
+  font-weight: 700 !important;
+}
+
+.btnLogin:hover {
+  opacity: 0.8;
+}
+
+.btnRegister {
+  background-color: #00c3ff !important;
+  color: white;
+  padding: 12px 20px !important;
+  margin: 8px 0 !important;
+  border: none !important;
+  border-radius: 4px !important;
+  cursor: pointer !important;
+  width: 100% !important;
+  font-weight: 700 !important;
+}
+
+.btnRegister:hover {
+  opacity: 0.8;
+}
+
+.btnAdd {
+  background-color: #ff4800 !important;
+  color: white;
+  padding: 12px 20px !important;
+  margin: 8px 0 !important;
+  border: none !important;
+  border-radius: 4px !important;
+  cursor: pointer !important;
+  width: 100% !important;
+  font-weight: 700 !important;
+}
+
+.btnAdd:hover {
+  opacity: 0.8;
+}
+
+.btnLogOut {
+  color: #262626 !important;
+  text-align: center;
+  font-weight: 700 !important;
+  float: right;
+}
+
+.btnLogOut:hover {
+  opacity: 0.8;
+}
+
+/*Design Avatar(Image)*/
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+}
+
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+
+.container {
+  padding: 16px;
+}
+
+p {
+  font-size: 14px;
+}
+
+/*Design Link(react-router-dom)*/
+.Link {
+  color: #4285f4;
+  font-weight: 700;
+}
+
+.Link:hover {
+  color: #262626;
+  font-weight: 700;
+}
+
+/*Design textarea In CCMain*/
+.inputDescription {
+  width: 100%;
+  min-width: 300px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  box-sizing: border-box;
+  outline: none;
+}
+
+.inputDescription:hover {
+  border: 1px solid #4285f4;
+}
+
+/*CCNotes*/
+.notesForm {
+  padding: 40px 100px;
+}
+
+/*Part Table in CCNotes*/
+.scrollable {
+  height: 800px;
+  overflow-y: auto;
+}
+
+.table {
+  table-layout: fixed;
+  min-width: 60vw !important;
+  margin: 0 auto;
+  background-color: #f5f7f7 !important;
+}
+
+.tableHeader {
+  position: sticky;
+  z-index: 2;
+  top: 0;
+  background-color: #a2dbec;
+}
+
+.tableBody {
+  background-color: #f5f7f7 !important;
+}
+
+.tableRow {
+  white-space: pre-line !important;
+}
+
+.tableRow:hover {
+  background-color: #eee !important;
+  overflow-y: hidden !important;
+}
+
+.TableCell {
+  white-space: pre-line;
+}
+
+.Trash {
+  cursor: pointer;
+  color: #72002f;
+  font-size: 30px !important;
+}
+
+.Trash:hover {
+  color: #ff006a;
+}
+
+/*Part Media-Query, Resposive*/
+@media screen and (max-width: 768px) {
+  body {
+    top: 50%;
+  }
+  p {
+    font-size: 12px;
+  }
+}
